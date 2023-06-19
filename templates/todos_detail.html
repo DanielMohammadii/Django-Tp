@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+
+    {% block content %}
+    <h1>{{Todos.title}}</h1>
+<p>{{Todos.description}}</p>
+<a href="{% url 'todos_update' Todos.id %} "><button type="button">Update The task</button></a>
+<a href="{% url 'todos_delete' Todos.id %} "><button type="button">Delete Task</button></a>
+    
+    {% endblock content %}
+
+
+
+
+
